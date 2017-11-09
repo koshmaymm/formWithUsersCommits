@@ -59,7 +59,7 @@
 }
 
 
-.discription {
+.description {
     padding-left: 11em;
     text-align: right;
     overflow: visible;
@@ -70,18 +70,18 @@
     white-space: nowrap;
 }
 
-.discription :last-child {
+.description :last-child {
     font-weight: bold;
 }
 
-.discription-property {
+.description-property {
     float: left;
     padding-left: 0.3em;
     text-align: left;
     border-radius: 0 8px 8px 0;
 }
 
-.discription-number {
+.description-number {
     padding-right: 2em;
 }
 

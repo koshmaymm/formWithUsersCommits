@@ -1,9 +1,9 @@
 window.onload = function () {
-    let areaConnits = document.getElementById("commits");
+    let areaCommits = document.getElementById("commits");
     let buttonClick = document.getElementById("new_commit");
     addNewCommit = function () {
         let text_commit = document.getElementById("exampleTextarea").value;
-        if (text_commit == false) {
+        if (!text_commit || text_commit === "") {
             return
         }
         else {
@@ -91,7 +91,7 @@ window.onload = function () {
         box.appendChild(dateCommit);
         box.appendChild(corner);
         box.appendChild(newCommit);
-        areaConnits.appendChild(box);
+        areaCommits.appendChild(box);
     }
     checkEvents = function (event) {
         if (event.which == 13 && event.ctrlKey) {
@@ -100,7 +100,7 @@ window.onload = function () {
     }
     buttonClick.addEventListener('click', addNewCommit, false);
     document.addEventListener('keydown', checkEvents, false);
-    if (document.attachEvent == true) {
+    if (document.attachEvent) {
         button.attachEvent("onclick", addNewCommit);
         document.attachEvent("onkeydown", checkEvents);
     }
