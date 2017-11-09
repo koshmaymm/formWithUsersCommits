@@ -1,0 +1,171 @@
+.container {
+    max-width: 720px;
+    min-width: 360px;
+    height: auto;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 1em;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    padding-bottom: 2em;
+}
+
+.img-circle{
+    position: absolute;
+    float: left;
+    width: 8em;
+    top: 1em;
+}
+.header-consultant{
+    margin-left: 9em;
+}
+
+.header-consultant-name{
+    font-size: 1em;
+    font-weight: bold;  
+}
+.header-consultant-position{
+    color: grey;
+    font-size: 0.8em;
+    padding-left: 11.2em;
+}
+
+.header-consultant-discription{
+    border: 1px solid rgb(113, 113, 113);
+    padding: 0.4em 0 0.4em 5em;
+    margin-left: 6em;
+    background-color: rgb(255, 251, 200);
+    font-size: 0.8em;
+    border-radius: 5px;
+    margin-top: 0.4em;
+}
+
+.main{
+    text-align: right;
+    margin-left: 9em;
+    margin-top: 0.3em;
+}
+
+.main-services{
+    margin-right: 1.2em;
+    font-size: 0.8em;  
+}
+
+.main-line{
+    border-top: 1px solid rgb(113, 113, 113);
+    margin-top: 0.25em;
+}
+
+
+.discription{
+    padding-left: 11em; 
+    text-align: right;
+    overflow: visible;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.8em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em; 
+    white-space: nowrap;
+}
+.discription :last-child { 
+    font-weight: bold;
+}
+.discription-property{
+    float: left;
+    padding-left: 0.3em;
+    text-align: left;
+    border-radius:  0 8px 8px 0;   
+}
+.discription-number{
+    padding-right: 2em; 
+}
+
+.manual-reservation{
+    border-left: 2px solid rgb(131, 178, 109);
+    background-color: rgb(177, 255, 155);
+    width: 75%;
+}
+.package_tours{
+    border-left: 2px solid rgb(126, 180, 202);
+    background-color: rgb(172, 226, 248); 
+    width: 20%;   
+}
+.hotels{
+    border-left: 2px solid rgb(126, 180, 202);
+    background-color: rgb(172, 226, 248);
+    width: 10%;  
+}
+.total{
+    font-weight: bold;  
+}
+
+.total__info{
+    font-size: 0.8em;
+    margin-bottom: 0.8em;
+}
+.recent-reviews{
+    margin-right: 1em; 
+    font-size: 1.1em;
+}
+.all-reviews{
+    text-decoration: underline;
+}
+.total-likes, .total-reviews{
+    float: right;
+}
+.total__info-heard{
+    width: 1.2em;
+    margin-right: 0.4em;
+}
+.total__info-messeges{
+    margin-right: 0.4em;
+}
+
+.total-reviews{
+    margin-left: 1em;
+}
+
+.client-name{
+    font-size: 0.9em;
+    font-weight: bold; 
+}
+
+.date-commit{
+    font-size: 0.8em;
+    color: rgb(113, 113, 113);
+}
+
+.commit_user {
+    position: relative;
+    padding: 1em;
+    font-size: 0.9em;
+    background-color: #E0FFFF;
+    
+ }
+ .commit_user:before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    border: 10px solid transparent;
+    border-left: 15px solid #E0FFFF;
+    margin-left: 0.5em;
+    
+ }
+
+ .footer{
+    background-color: rgb(242, 242, 242);
+    padding: 0;
+    margin: 0;
+    padding-top: 1em;
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+ }
+ #new_commit{
+    background-color: rgb(253,214,57);
+    border-radius: 20px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    outline: none;
+ }
