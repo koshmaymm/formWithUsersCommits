@@ -3,8 +3,8 @@ window.onload = function () {
     let buttonClick = document.getElementById("new_commit");
     addNewCommit = function () {
         let text_commit = document.getElementById("exampleTextarea").value;
-        if (!text_commit || text_commit === "") {
-            return
+        if (!text_commit || text_commit == false) {
+            formCommit.reset();
         }
         else {
             createNewCommit(text_commit);
@@ -98,10 +98,12 @@ window.onload = function () {
             addNewCommit();
         };
     }
-    buttonClick.addEventListener('click', addNewCommit, false);
-    document.addEventListener('keydown', checkEvents, false);
+    
     if (document.attachEvent) {
         button.attachEvent("onclick", addNewCommit);
         document.attachEvent("onkeydown", checkEvents);
+    } else{
+        buttonClick.addEventListener('click', addNewCommit, false);
+        document.addEventListener('keydown', checkEvents, false);
     }
 }
