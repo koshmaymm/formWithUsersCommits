@@ -3,7 +3,7 @@ window.onload = function () {
     let buttonClick = document.getElementById("new_commit");
     addNewCommit = function () {
         let text_commit = document.getElementById("exampleTextarea").value;
-        if (!text_commit || text_commit == false) {
+        if (text_commit == false) {// "text_commit == false" Do not skip a string that contains only spacebars
             formCommit.reset();
         }
         else {
